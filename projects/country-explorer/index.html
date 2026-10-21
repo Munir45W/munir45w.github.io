@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌍 Country Explorer</h1>
+
+        <p>Search for a country to see its information and location.</p>
+
+        <form id="search-form">
+            <input
+                id="country-input"
+                type="text"
+                placeholder="e.g. Australia"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="status"></div>
+
+        <div id="results">
+
+            <div id="country-card">
+                <img id="flag" alt="">
+
+                <h2 id="country-name"></h2>
+
+                <p id="capital"></p>
+                <p id="region"></p>
+                <p id="population"></p>
+                <p id="area"></p>
+                <p id="languages"></p>
+                <p id="currencies"></p>
+            </div>
+
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: #253858;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#status {
+    color: #b91c1c;
+}
+
+#results {
+    display: flex;
+    gap: 20px;
+    visibility: hidden;
+}
+
+#country-card {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#flag {
+    width: 150px;
+    max-width: 100%;
+}
+
+#map {
+    flex: 1;
+    min-width: 0;
+    height: 400px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    #results {
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
